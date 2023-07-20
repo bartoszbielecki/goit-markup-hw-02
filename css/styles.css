@@ -1,50 +1,140 @@
+:root {
+  --font-logo: 'Raleway', sans-serif;
+
+  --color-black: #000;
+  --color-white: #fff;
+  --color-cloud: #f4f4fd;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-navy-blue: #2e2f42;
+  --color-cornflower: #e7e9fc;
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+}
+
 * {
   margin: auto;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: var(--color-navy-blue);
 }
 
 .logo {
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
-  font-family: 'Raleway', sans-serif;
+  color: var(--color-black);
+  font-family: var(--font-logo);
   font-size: 18px;
   font-weight: 700;
 }
 
-.logo_footer {
+.link-menu {
+  color: var(--color-navy-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link-menu:hover,
+.link-menu:active,
+.link-menu:focus {
+  color: var(--color-ocean);
+}
+
+.link-contact {
+  color: var(--color-navy-blue);
+  text-decoration: none;
+}
+
+.link-contact:hover,
+.link-contact:active,
+.link-contact:focus {
+  color: var(--color-ocean);
+}
+
+#navbar {
+  border-bottom: 1px solid var(--color-cornflower);
+}
+
+.filter {
+  color: var(--color-slate);
+}
+
+.logo-footer {
   text-decoration: none;
   text-transform: uppercase;
-  color: #f4f4fd;
+  color: var(--color-cloud);
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
 
-.logo_span {
-  color: #4d5ae5;
+.logo-span {
+  color: var(--color-iris);
 }
 
 #hero {
   background-color: #2e2f42;
 }
 
-#hero h1 {
-  color: #f4f4fd;
+.hero-header {
+  color: var(--color-cloud);
 }
 
-#hero button {
-  background-color: #4d5ae5;
-  color: #f4f4fd;
+.hero-btn {
+  background-color: var(--color-iris);
+  color: var(--color-cloud);
+  border-radius: 4px;
+  border: none;
+}
+
+.hero-btn:hover,
+.hero-btn:active,
+.hero-btn:focus {
+  background-color: var(--color-cornflower);
+  color: var(--color-ocean);
+  cursor: pointer;
+}
+
+.filter-btn {
+  background-color: var(--color-cornflower);
+  color: var(--color-iris);
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+}
+
+.filter-btn:hover,
+.filter-btn:active,
+.filter-btn:focus {
+  background-color: var(--color-ocean);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.project-card {
+  border: 1px solid var(--color-cornflower);
+}
+
+.work-img {
+  border: 1px solid var(--color-cornflower);
+}
+
+.team-member {
+  background-color: var(--color-white);
+  border-radius: 0 0 4px 4px;
+}
+
+.team-member-info,
+.features-info {
+  color: var(--color-slate);
 }
 
 #team {
-  background-color: #f4f4fd;
+  background-color: var(--color-cloud);
 }
 
 #footer {
   background-color: #2e2f42;
-  color: #f4f4fd;
+  color: var(--color-cloud);
 }
